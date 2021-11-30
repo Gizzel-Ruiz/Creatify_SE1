@@ -7,9 +7,9 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demofx.HelloController">
    <left>
-      <AnchorPane prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #288cd7;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="1000.0" prefWidth="771.0" style="-fx-background-color: #288cd7;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="logoImageView" fitHeight="500.0" fitWidth="500.0" layoutX="210.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logoImageView" fitHeight="500.0" fitWidth="500.0" layoutX="108.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../IMG/Screenshot.PNG" />
                </image>
@@ -18,7 +18,7 @@
       </AnchorPane>
    </left>
    <right>
-      <AnchorPane prefHeight="1000.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="1000.0" prefWidth="730.0" BorderPane.alignment="CENTER">
          <children>
             <Label id="usernameLabel" fx:id="usernameLabel" layoutX="75.0" layoutY="417.0" text="Username">
                <font>
@@ -36,10 +36,6 @@
                <font>
                   <Font name="Roboto Light" size="13.0" />
                </font></TextField>
-            <Button id="signinButton" fx:id="signinButton" layoutX="210.0" layoutY="540.0" mnemonicParsing="false" onMouseClicked="#loginButtonOnAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #288cd7;" text="Sign In" textFill="#fcf9f9">
-               <font>
-                  <Font name="Roboto Light" size="18.0" />
-               </font></Button>
             <Label id="signinErrorMSGLabel" fx:id="loginErrorMSGField" alignment="CENTER" layoutX="130.0" layoutY="600.0" prefHeight="20.0" prefWidth="283.0" text="kkkllkjji" textAlignment="CENTER" textFill="#171717">
                <font>
                   <Font name="Roboto Light" size="14.0" />
@@ -50,6 +46,7 @@
                   <Image url="@../../../../../IMG/CloseOut.PNG" />
                </image>
             </ImageView>
+            <Button id="loginButton" layoutX="261.0" layoutY="550.0" mnemonicParsing="false" text="Button" />
          </children>
       </AnchorPane>
    </right>

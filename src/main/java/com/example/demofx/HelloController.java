@@ -11,13 +11,13 @@ import javafx.event.ActionEvent;
 
 import java.io.File;
 import java.net.URL;
+import java.util.EventListener;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
+
     @FXML
-    private Button loginButton;
-    @FXML
-    private Label loginErrorMSGField;
+    private Label signinErrorMSGLabel;
     @FXML
     private ImageView logoImageView;
     @FXML
@@ -31,7 +31,7 @@ public class HelloController implements Initializable {
 
     }
 
-        public void loginButtonOnAction(ActionEvent event){
-            loginErrorMSGField.setText("Login button clicked");
-        }
+    public void loginButton(EventListener event){
+        signinErrorMSGLabel.setText("Login attempted");
+    }
 }
